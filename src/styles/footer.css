@@ -1,0 +1,128 @@
+/* Footer Styles */
+.footer {
+  background: #121212;
+  color: white;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+/* Contact Info */
+.contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.contact p strong {
+  color: #f39c12;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  margin-right: 12px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+  transform: scale(1.2);
+}
+
+/* Achievements */
+.achievements {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.achievement-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Map */
+iframe {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

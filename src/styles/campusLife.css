@@ -1,0 +1,125 @@
+/* Updated Campus Life Section */
+.campus-life {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #eef5ff, #dbe9ff); /* Soft gradient */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Add a subtle background texture */
+.campus-life::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background-pattern.png"); /* Subtle pattern */
+  background-size: cover;
+  opacity: 0.08;
+  z-index: 0;
+  filter: blur(3px);
+}
+
+/* Ensure content is on top of the background */
+.campus-life > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff7b00;
+  display: block;
+  margin: 12px auto;
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.campus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Clickable Card Styling */
+.campus-card {
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: block;
+  position: relative;
+}
+
+.campus-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Card Image */
+.campus-card img {
+  width: 100%;
+  height: 240px; /* Increased height for better visibility */
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slight zoom effect on hover */
+.campus-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.card-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .campus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-card img {
+    height: 200px;
+  }
+}

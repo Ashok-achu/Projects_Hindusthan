@@ -1,0 +1,142 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ffffff, #f7f7f7);
+  padding: 60px 8%;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap: 40px;
+}
+
+/* Text Section */
+.text-section {
+  max-width: 50%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.trustee-about {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.trustee-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d3e92;
+  margin-top: 15px;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background: goldenrod;
+  border: none;
+  margin: 12px 0;
+}
+
+.trustee-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.trustee-institution {
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Image Section */
+.image-section {
+  max-width: 60%;
+  text-align: right;
+  position: relative;
+}
+
+.trustee-image {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Parallax Effect on Hover */
+.trustee-image:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fully Responsive Design */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-section {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .trustee-image {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .trustee-about {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .trustee-name {
+    font-size: 24px;
+  }
+
+  .trustee-title {
+    font-size: 20px;
+  }
+
+  .trustee-institution {
+    font-size: 16px;
+  }
+}

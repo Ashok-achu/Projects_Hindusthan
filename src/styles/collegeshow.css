@@ -1,0 +1,71 @@
+.college-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .college-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .college-img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .college-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .section-heading h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline {
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: orange;
+    margin: 5px auto 0;
+  }
+  
+  
+  
+  .college-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .college-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .college-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

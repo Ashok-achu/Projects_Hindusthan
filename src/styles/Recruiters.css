@@ -1,0 +1,85 @@
+#our-recruiters {
+  text-align: center;
+  padding: 40px 0;
+  background: #f5f1e6;
+  color: black;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 8px auto 0;
+}
+
+/* Restrict the width and center the container */
+.slider {
+  max-width: 90%; /* Adjust width based on screen */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200%; /* Allow smooth scrolling */
+  animation: scroll 15s linear infinite;
+}
+
+.recruiter {
+  width: 150px; /* Adjust size */
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.recruiter img {
+  width: 100px;
+  height: auto;
+  filter: brightness(1.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.recruiter img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+
+/* Scrolling Effect */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slider-track {
+    animation-duration: 20s; /* Slower scroll for small screens */
+  }
+  .recruiter {
+    width: 120px;
+  }
+  .recruiter img {
+    width: 80px;
+  }
+}

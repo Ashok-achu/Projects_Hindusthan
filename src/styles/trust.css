@@ -1,0 +1,206 @@
+/* Trust Section */
+.trust-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.trust-section h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Paragraph with Justified Content */
+.trust-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-in-out;
+    text-align: justify;
+}
+
+/* Blocks Container */
+.trust-block-container {
+    display:block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Individual Block */
+.trust-block {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Fixed width to maintain consistency */
+    max-width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Image inside Block */
+.trust-block img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffffff;
+}
+
+/* Block Content */
+.trust-block h3 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.trust-block p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .trust-section h2 {
+        font-size: 2rem;
+    }
+
+    .trust-section p {
+        font-size: 1rem;
+    }
+
+    .trust-block-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .trust-block {
+        width: 280px;
+        padding: 20px;
+    }
+
+    .trust-block h3 {
+        font-size: 1.4rem;
+    }
+
+    .trust-block p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .trust-section {
+        padding: 60px 15px;
+    }
+
+    .trust-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .trust-section p {
+        font-size: 0.95rem;
+    }
+
+    .trust-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust-block {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .trust-block img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .trust-block h3 {
+        font-size: 1.3rem;
+    }
+
+    .trust-block p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trust-section {
+        padding: 40px 10px;
+    }
+
+    .trust-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .trust-section p {
+        font-size: 0.9rem;
+    }
+
+    .trust-block {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .trust-block img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .trust-block h3 {
+        font-size: 1.2rem;
+    }
+
+    .trust-block p {
+        font-size: 0.85rem;
+    }
+}
